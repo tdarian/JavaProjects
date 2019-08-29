@@ -13,8 +13,8 @@ public class MenuRunner {
 		System.out.print("Enter Number2: ");
 		int number2 = scanner.nextInt();
 		
-		System.out.println("Number1: " + number1);
-		System.out.println("Number2: " + number2);
+		//System.out.println("Number1: " + number1);
+		//System.out.println("Number2: " + number2);
 		
 		System.out.println("1 - Add");
 		System.out.println("2 - Subtract");
@@ -24,8 +24,9 @@ public class MenuRunner {
 		int operation = scanner.nextInt();
 		
 		Menu finalvalue = new Menu(number1,number2);
+		finalvalue.performOperationSwitch(operation);
 		
-		if(operation == 1) {
+		/*if(operation == 1) {
 			System.out.println(finalvalue.add());
 		}
 		else if(operation ==2) {
@@ -36,9 +37,9 @@ public class MenuRunner {
 		}
 		else {
 			System.out.println(finalvalue.multiply());
-		}
+		}*/
 		
-		
+	
 		
 
 	}
